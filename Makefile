@@ -22,7 +22,6 @@ current_dir := $(patsubst %/,%,$(dir $(mkfile_path)))
 export CGO_ENABLED=0
 export GO111MODULE=on
 export GOPROXY=https://proxy.golang.org
-export GOPRIVATE=*.bank24.int,*.tochka-tech.com
 
 .PHONY: build clean vendor tests lint
 .ONESHELL:
